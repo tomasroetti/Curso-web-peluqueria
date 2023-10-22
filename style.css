@@ -1,0 +1,652 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body{
+    background-color: white;
+}
+
+
+/* Navbar*/
+.header{
+    background-color: rgb(136, 8, 8);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    padding: 2rem 10%;
+    border-bottom: 2px solid black;
+ 
+}
+
+.header .logo img{
+    height: 7rem;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+ .header .navbar{
+    list-style: none;
+
+ }
+
+ .header .navbar li{
+    padding: 0 20px;
+    display: inline-block;
+ }
+.header .navbar li:hover{
+    transform: scale(1.1);
+}
+
+ .header .navbar a{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Bebas Neue;
+ }
+
+ .header .navbar li a:hover{
+    color: rgb(5, 5, 5);
+}
+section{
+    min-height: 100vh;
+    padding: 4rem 7% 2rem;
+
+}
+
+@media (max-width: 697px){
+    .header .logo img{
+        height: 5rem;
+        width: auto;
+        transition: all 0.3s;
+    }
+    
+    
+    .header .navbar li{
+        padding: 0 2;
+        display: inline-block;
+     }
+    
+    .header .navbar a{
+        font-size: 2vh;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: Bebas Neue;
+     }
+    
+    
+}
+
+
+/* Menu Inicio*/
+.inicio{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+
+.inicio-contenido h1{
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 58;
+    font-family: Bebas Neue;
+    border: 2px solid black;
+    background-color: rgb(136, 8, 8);
+}
+
+.inicio-contenido h2{
+    color: rgb(136, 8, 8);
+    text-align: center;
+    font-size: 32;
+    font-family: Bebas Neue;
+}
+
+.caja{
+    background-image: url(https://st4.depositphotos.com/7473544/24069/v/450/depositphotos_240692016-stock-illustration-barbershop-background-seamless-pattern-with.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 90%;
+
+}
+
+.primertexto{
+    margin: 2rem;
+    background-color: rgb(252, 252, 252);
+    width: 20%;
+    max-width: 30%;
+    border: 2px solid black;
+    border-radius: 10%;
+    transition: all 0.5s;
+    
+}
+
+.primertexto:hover{
+    transform: scale(1.1);
+}
+.primertexto p{
+    max-width: 100%;
+    font-size: 20;
+    text-align: center;
+    margin: 2rem 2rem 2rem 2rem ;
+    
+}
+
+.primertexto h3{
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 26;
+    font-family: Bebas Neue;
+    color: rgb(136, 8, 8);
+}
+
+
+.imagen{
+    margin: 2rem 2rem 2rem 2rem;
+    max-width: 30%;
+
+}
+.imagen img{
+    margin: 2rem auto;
+    align-content: center;
+    border-radius: 10%;
+    width: 100%;
+
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    border: .2rem solid rgb(136, 8, 8);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: rgb(136, 8, 8);
+    margin: 1rem 1.5rem 1rem 0;
+    transition: .5s ease;
+    text-decoration: none
+
+}
+
+.social-media a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 1rem rgb(255, 255, 255);
+}
+
+.segundotexto{
+    margin: 2rem;
+    background-color: rgb(252, 252, 252);
+    width: 20%;
+    max-width: 30%;
+    border: 2px solid black;
+    border-radius: 10%;
+    transition: all 0.5s;
+    
+}
+.segundotexto:hover{
+    transform: scale(1.1);
+}
+
+.segundotexto h3{
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 26;
+    font-family: Bebas Neue;
+    color: rgb(136, 8, 8);
+}
+.segundotexto p{
+    max-width: 100%;
+    font-size: 20;
+    text-align: center;
+    margin: 2rem 2rem 2rem 2rem ;
+    
+}
+@media (max-width: 950px){
+    .caja{
+        background-image: url(https://st4.depositphotos.com/7473544/24069/v/450/depositphotos_240692016-stock-illustration-barbershop-background-seamless-pattern-with.jpg);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    
+    }
+    .primertexto,.segundotexto{
+        align-items: center;
+        background-color: rgb(252, 252, 252);
+        height: 50rem;
+        width: 80%;
+        height: 20%;
+        max-width: 100%;
+        border: 2px solid black;
+        border-radius: 10%;
+        transition: all 0.5s;
+        
+    }
+
+    .imagen{
+        align-items: center;
+        width: 80%;
+        max-width: 100%;
+    
+    }
+
+    .imagen img{
+        margin: 2rem auto;
+        align-content: center;
+        border-radius: 10%;
+        width: 100%;
+    
+    }
+
+}
+
+
+/* SERVICIOS*/
+.servicio{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin: 0 auto ;
+    width: 100%;
+
+    
+}
+ .servicio-contenido{
+    width: 100%;
+ }
+.servicio-contenido h1{
+    text-align: center;
+    font-size: 48;
+    margin: 0 auto;
+    font-family: Bebas Neue;
+    background-color:rgb(136, 8, 8);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+.containerservicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+
+}
+.containerservicios .serviciopeluqueria{
+    background: rgb(250, 250, 250);
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid rgb(136, 8, 8);
+    transition: .5s ease ;
+}
+.serviciopeluqueria{
+    background: white;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid rgb(139, 5, 5) ;
+    transition: .5s ease ;
+    margin: 10vh;
+    
+}
+.serviciopeluqueria i{
+    font-size: 5rem;
+    color: rgb(136, 8, 8) ;
+}
+.serviciopeluqueria h2{
+    font-size: 2.6rem;
+    font-family: Bebas Neue;
+    color:rgb(136, 8, 8) ;
+}
+
+.serviciopeluqueria p{
+    font-size: 1.6rem;
+
+}
+@media (max-width: 924px){
+
+    .containerservicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .containerservicios .serviciopeluqueria{
+        background: rgb(250, 250, 250);
+        border-radius: 2rem;
+        text-align: center;
+        border: .2rem solid rgb(136, 8, 8);
+        transition: .5s ease ;
+    }
+    .serviciopeluqueria{
+        background: white;
+        border-radius: 2rem;
+        text-align: center;
+        border: .2rem solid rgb(139, 5, 5) ;
+        transition: .5s ease ;
+        margin: 10vh;
+        
+    }
+    .serviciopeluqueria i{
+        font-size: 32px;
+        color: rgb(136, 8, 8) ;
+    }
+    .serviciopeluqueria h2{
+        font-size: 32px;
+        font-family: Bebas Neue;
+        color:rgb(136, 8, 8) ;
+    }
+    
+    .serviciopeluqueria p{
+        font-size: 12px;
+    }
+    
+}
+
+
+
+/* Galeria*/
+.galeria{
+    border: 2px solid black;
+    margin: 50px auto;
+    width: 90%;
+    background-color:rgb(139, 5, 5) ;
+    
+}
+
+.galeria h1{
+    text-align: center;
+    font-size: 46;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    font-family: Bebas Neue;
+}
+.container-galeria{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 1fr 1fr 1fr;
+    position: static;    
+}
+
+
+.foto1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: url(https://tahecosmetics.com/trends/wp-content/uploads/2023/02/mohicano-personalizado.jpg) no-repeat center/cover;
+    transition: all 0.5s;
+}
+.foto1:hover{
+    transform: scale(1.1);
+}
+.foto2{
+    background: url(Imagenes/corte1.jpg) no-repeat center/cover;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    transition: all 0.5s;
+}
+.foto2:hover{
+    transform: scale(1.1);
+}
+
+.foto3{
+    background: url(Imagenes/cortando.jpg) no-repeat center/cover;
+    grid-column: 1/3;
+    grid-row: 1/1;
+    transition: all 0.5s;
+}
+.foto3:hover{
+    transform: scale(1.1);
+}
+
+.foto4{
+    background: url(Imagenes/largo.jpg) no-repeat center/cover;
+    grid-column: 4/4;
+    grid-row: 1/4;
+    transition: all 0.5s;
+}
+.foto4:hover{
+    transform: scale(1.1);
+}
+
+.foto5{
+    background: url(Imagenes/cortes-de-pelo-con-barba-22.jpg) no-repeat center/cover;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    transition: all 0.5s;
+}
+.foto5:hover{
+    transform: scale(1.1);
+}
+.foto6{
+    background: url(Imagenes/Mens-fade-haircut-with-beard-camdavis713.jpg) no-repeat center/cover;
+    grid-column: 1/2;
+    grid-row: 3/3;
+    transition: all 0.5s;
+}
+.foto6:hover{
+    transform: scale(1.1);
+}
+.foto7{
+    background: url(Imagenes/productos.jpg) no-repeat center/cover;
+    transition: all 0.5s;
+}
+.foto7:hover{
+    transform: scale(1.1);
+}
+.foto8{
+    background: url(Imagenes/cabecera-barbero-profesional.jpg)no-repeat center/cover ;
+    transition: all 0.5s;
+}
+.foto8:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 684px){
+
+    .foto1{
+        visibility: hidden;
+    }
+    .foto2{
+        visibility: hidden;
+    }
+
+    .foto3{
+        grid-column: 1/6;
+        grid-row: 1/2;
+
+    }
+    .foto3:hover{
+        transform: none;
+    }
+    .foto4{
+        visibility: hidden;
+    }
+
+    .foto6{
+        grid-column: 3/5;
+        grid-row: 2/2;
+    }
+
+    .foto6:hover{
+        transform: none;
+    }
+    .foto5{
+        grid-column: 1/3;
+        grid-row:2/2;
+
+    }
+    .foto5:hover{
+        transform: none;
+    }
+    
+    .foto7{
+        grid-column: 1/6;
+        grid-row: 3/3;
+    }
+
+    .foto7:hover{
+        transform: none;
+    }
+    
+    .foto8{
+        visibility: hidden
+    }
+
+}
+/* Contacto*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .contact-form {
+    width: 40%;
+    box-sizing: border-box;
+
+
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgb(139, 5, 5) ;
+    font-family: Bebas Neue;
+    font-size: 48;
+  }
+  
+
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 10px;
+    background-color: rgb(139, 5, 5);
+    border-radius: 5%;
+    color: white;
+  }
+
+  .contact-form label{
+    font-family: Bebas Neue;
+    font-size: 32;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color:rgb(139, 5, 5); 
+    color: white;
+    padding: 10px;
+    border:  2px solid black;
+    border-radius: 10%;
+    font-family: Bebas Neue;
+    font-size: 32;
+  }
+  
+  .contact-info {
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+    border: 2PX solid black;
+    background-color: rgb(139, 5, 5);
+
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgb(255, 255, 255) ;
+    font-family: Bebas Neue;
+    font-size: 2rem;
+  }
+  
+.contact-info p {
+    margin-left: 1rem;
+    color: white;
+}
+  .contact-info .redes-sociales{
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contact-info .redes-sociales i {
+    margin-top: 10rem;
+    font-size: 50;
+    color: rgb(255, 255, 255);
+    border: 2PX solid rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  .contact-info .redes-sociales i:hover{
+    transform: scale(1.2);
+  }
+  /*FOOTER*/
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color:  rgb(139, 5, 5);
+    color:  rgb(255, 255, 255);
+    padding: 20px 0;
+    border-top: 2px solid black;
+  }
+  
+  .footer-info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-info p{
+    font-size: Bebas Neue;
+    margin: 3px;
+  }
+  .footer-info,
+  .redes-sociales {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .redes-socialesss i{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    margin-left: 10px;
+    font-size: 32;
+  }
+
