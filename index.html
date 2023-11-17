@@ -2,23 +2,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BarberShop</title>
+    <link rel="icon" href="Imagenes/icono.ico">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="Imagenes/pngwing.com.png" alt="Logo"> 
+    <header>
+    <nav id="navbar">
+        <div class="container">
+            <div class="container-logo">
+                <h2>BarberShop</h2>
+            </div>
+            
+            <ul class="links">
+                <li class="link"><a href="">Inicio</a></li>
+                <li class="link"><a href="#servicio">Servicios</a></li>
+                <li class="link"><a href="#trabajadores">Empleado</a></li>
+                <li class="link"><a href="#contacto">Contact</a></li>
+            </ul>
+            
+            <div class="toggle">
+                |||
+            </div>
         </div>
-        <nav class="navbar">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicio">Servicios</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </nav>
-    </header>    
+    </nav>
+    </header>
     <main>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="Imagenes/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="Imagenes/2.png" alt=""></div>
+            <div class="swiper-slide"><img src="Imagenes/3.png" alt=""></div>
+            </div>
+            <!-- Navegacion-->
+            <div class="swiper-pagination"></div>
+        
+            <!--Botones flecha -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+
         <section class="inicio" id="inicio">
 
             <div class="inicio-contenido">
@@ -28,20 +56,15 @@
                 <div class="caja">
                     <div class="primertexto">
                         <h3>Quienes Somos ?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae enim sed a nobis, sit consequuntur numquam quam voluptates veritatis necessitatibus eum distinctio dolor placeat excepturi ratione tempora fugit vitae magni.</p>
-                        
+                        <p>En BarberShop, fusionamos la tradición de la barbería con la creatividad moderna. Somos más que un simple salón de belleza; somos un destino donde la autenticidad se encuentra con el estilo. Nuestros hábiles barberos no solo dominan los cortes de pelo clásicos, sino que también son artistas del tatuaje, llevando la expresión personal a un nuevo nivel. En BarberShop, no solo te llevas un corte impecable, sino una experiencia única que refleja tu individualidad. ¡Bienvenido a la casa de la autenticidad y el estilo en cada detalle!</p>                        
                     </div>
                     <div class="imagen">
-                        <img src="Imagenes/13b32965fd361e7d4c5b958fd60688ad.jpg" alt="Local">
+                        <img src="Imagenes/barbershop.jpg" alt="">
                         <div class="social-media">
                             <a href="#"target="_blank"><i class='bx bxl-facebook'></i></a>
                             <a href="# "target="_blank"><i class='bx bxl-instagram'></i></a>
                             <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
                         </div>
-                    </div>
-                    <div class="segundotexto">
-                        <h3>Que buscamos ?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae enim sed a nobis, sit consequuntur numquam quam voluptates veritatis necessitatibus eum distinctio dolor placeat excepturi ratione tempora fugit vitae magni.</p>
                     </div>
                 </div>
             </div>
@@ -53,47 +76,111 @@
                     <div class="serviciopeluqueria">
                         <i class='bx bx-cut'></i>
                         <h2>Peluqueria</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet quos placeat. Quod aut quae atque repellat ratione explicabo voluptatibus illo alias hic, ipsum, reprehenderit magni beatae eos earum. Debitis.</p>
+                        <p>En la esencia de Barbershop, perseguimos la perfección capilar. Somos más que peluqueros; somos arquitectos de estilo, transformando cada hebra en una declaración de individualidad. Descubre la auténtica expresión de tu cabello con nosotros.</p>
                     </div>
                     <div class="serviciopeluqueria">
                         <i class='bx bxs-user'></i>
                         <h2>Barberia</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam vel minus, sit neque molestias cumque, iure, magni sint obcaecati tenetur. Impedit, molestiae temporibus! Libero alias culpa veritatis!</p>
-                        
+                        <p>En Barbershop, perfeccionamos el arte de la barba y la piel. Somos más que barberos, somos artesanos de la masculinidad, esculpiendo contornos precisos y ofreciendo tratamientos faciales rejuvenecedores. Descubre la elegancia en cada detalle de tu barba y piel en Barbershop, donde la autenticidad se refleja en cada afeitado y cuidado facial.</p>                        
+                    </div>
+                    <div class="serviciopeluqueria">
+                        <i class='bx bxs-user'></i>
+                        <h2>Tatuajes</h2>
+                        <p> Honramos la tradición con agujas y tinta. Somos guardianes del arte del tatuaje tradicional, fusionando lo clásico con lo contemporáneo. Cada diseño es una narrativa en tu piel, una expresión atemporal de tu historia.</p>                        
                     </div>
                 </div>
 
             </div>
         </section>
-        <section class="galeria" id="galeria">
-                <h1>Galeria</h1>
-                <div class="container-galeria">
-                    <div class="fotos foto1">
-
+        <section class="objetivo" id="objetivo">
+            <div class="container-objetivo">
+                <div class="contenedor-textoo">
+                    <div class="container-text">
+                        <h1> Que objetivos tenemos ?</h1>
+                        <p> En BarberShop, perseguimos la excelencia con tijeras afiladas y agujas vibrantes. Más que un salón, somos artesanos de la autenticidad y la individualidad. Nuestro objetivo es esculpir tu estilo único, fusionando cortes de pelo impecables y tatuajes vibrantes para que cada visita sea una expresión de tu verdadero yo. ¡Bienvenido a la evolución de la belleza en BarberShop, donde la creatividad y la autenticidad se encuentran!</p>
                     </div>
-                    <div class="fotos foto2">
-
-                    </div>
-                    <div class="fotos foto3">
-
-                    </div>
-                    <div class="fotos foto4">
-
-                    </div>
-                    <div class="fotos foto5">
-
-                    </div>
-                    <div class="fotos foto6">
-
-                    </div>
-                    <div class="fotos foto7">
-
-                    </div>
-                    <div class="fotos foto8">
-
+                    <div class="container-text2">
+                        <h1> Que objetivos tenemos ?</h1>
+                        <p> En BarberShop, perseguimos la excelencia con tijeras afiladas y agujas vibrantes. Más que un salón, somos artesanos de la autenticidad y la individualidad. Nuestro objetivo es esculpir tu estilo único, fusionando cortes de pelo impecables y tatuajes vibrantes para que cada visita sea una expresión de tu verdadero yo. ¡Bienvenido a la evolución de la belleza en BarberShop, donde la creatividad y la autenticidad se encuentran!</p>
                     </div>
                 </div>
+                
+                <div class="container-img">
+                        <div class="imagen-obj">
+
+                        </div>
+                </div>
+            </div>
+
         </section>
+        <section class="trabajadores" id="trabajadores">
+            <div class="trabjadores-contenido">
+                <h1>Trabajadores :</h1>
+            </div>
+            <div class="card">
+                <div class="head">
+                    <div class="circulo">
+                        <div class="img-card">
+                            <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <h3>Rossi Valentin</h3>
+                    <h4>Tatuador</h4>
+                    <p>Soy el narrador de tu historia en tinta, fusionando creatividad y significado. Cada tatuaje es una expresión única de tu identidad.</p>
+                </div>
+
+                <div class="cardcontact">
+                    <a href="rossi.html">Saber Mas!!</a>
+                </div>
+
+                
+            </div>
+
+            <div class="card">
+                <div class="head">
+                    <div class="circulo">
+                        <div class="img-card">
+                            <img src="https://images.unsplash.com/photo-1629708494720-91f2c75f7604?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <h3>Mario Rodriguez</h3>
+                    <h4>Peluquero</h4>
+                    <p>Soy el arquitecto de tu estilo, esculpiendo con precisión y pasión. Cada corte es una obra maestra que refleja tu individualidad.</p>
+                </div>
+
+                <div class="cardcontact">
+                    <a href="#">Saber Mas!!</a>
+                </div>
+
+                
+            </div>
+
+            <div class="card">
+                <div class="head">
+                    <div class="circulo">
+                        <div class="img-card">
+                            <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <h3>Jorge Alvarez</h3>
+                    <h4>Barbero</h4>
+                    <p> Soy el artífice de tu barba y piel, fusionando destreza y dedicación. Cada sesión es una experiencia personalizada que realza tu autenticidad.</p>
+                </div>
+
+                <div class="cardcontact">
+                    <a href="#">Saber Mas!!</a>
+                </div>
+
+                
+            </div>
+        </section>
+
 
         <section class="contacto" id="contacto">
             <div class="container">
@@ -143,5 +230,9 @@
           </div>
         </div>
       </footer>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="slider.js"></script>
 </body>
 </html>
