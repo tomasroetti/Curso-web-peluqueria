@@ -1,0 +1,867 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+:root{
+    --principal-color:rgb(136, 8, 8);
+    --secundario-color:rgb(255,255,255);
+    --terciario-color:rgb(0,0,0);
+    --rojo-suave:rgba(136, 8, 8, 0.527);
+    --font--:Bebas Neue;
+}
+
+body{
+    background-color: white;
+}
+
+
+/*Navbar*/
+nav{
+    background: var(--principal-color);
+    border: 3px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(7, 7, 7, 0.25);
+    position: relative;
+    z-index: 1000;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    line-height: 80px;
+    z-index: 10;
+}
+
+.container-logo{
+    margin-left: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.container-logo h2{
+    color: var(--secundario-color);
+    font-family: var(--font--);
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.container-logo h2:hover{
+    color: var(--terciario-color);
+}
+
+
+.links .link {
+    display: inline-block;
+}
+
+
+.links .link a {
+    font-family: var(--font--);
+    text-decoration: none;
+    color: var(--secundario-color);
+    font-size: 20px;
+    margin: 0 25px;
+    letter-spacing: 3px;
+    transition: 3px;
+}
+
+.links .link a:hover{
+    color: var(--terciario-color);
+}
+
+.toggle{
+    display: none;
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    color: var(--secundario-color);
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:800px){
+    .toggle{
+        display: inline-block;
+    }
+    .links{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 0 0;
+        background-color: black;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: calc(100vh- 80px);
+        z-index: 1000;
+        top: -100vh;
+        transition: .5s;
+    }
+
+    .active{
+        top: 80px
+    }
+
+    .links .link:hover{
+        background: var(--rojo-suave);
+    }
+
+}
+
+
+
+@media (max-width: 697px){
+    .header .logo img{
+        height: 5rem;
+        width: auto;
+        transition: all 0.3s;
+    }
+    
+    
+    .header .navbar li{
+        padding: 0 2;
+        display: inline-block;
+     }
+    
+    .header .navbar a{
+        font-size: 2vh;
+        color: var(--secundario-color);
+        text-decoration: none;
+        font-family: Bebas Neue;
+     }
+    
+    
+}
+
+
+.contacto,.galeria{
+    min-height: 100vh;
+    padding: 4rem 7% 2rem;
+}
+
+/*Slider*/
+.swiper{
+    width: 100%;
+    height: 70%;
+    border: black solid 3px;
+  }
+
+.swiper-slide img{
+    width: 100%;
+    height: 656px;
+    object-fit: cover;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    --swiper-navigation-size: 32px;
+    color: var(--principal-color);
+    opacity: 0;
+    transition:  opacity 0.5s;  
+}
+
+.swiper:hover .swiper-button-prev, .swiper:hover .swiper-button-next{
+    opacity: 1;
+}
+
+.swiper .swiper-pagination{
+    --swiper-pagination-color: var(--principal-color);
+}
+/* Menu Inicio*/
+.inicio{
+    background-color:var(--secundario-color);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+
+.inicio-contenido h1{
+    color: var(--secundario-color);
+    margin-top: 25px;
+    text-align: center;
+    font-size: 58;
+    font-family: var(--font--);
+    border: 2px solid black;
+    background-color: var(--principal-color);
+}
+
+.inicio-contenido h2{
+    color: rgb(136, 8, 8);
+    text-align: center;
+    font-size: 32;
+    font-family: Bebas Neue;
+}
+
+.caja{
+    background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    width: 90%;
+
+}
+
+.primertexto{
+    margin: 7rem 7rem;
+    width: 20%;
+    height: 10%;
+    border-radius: 10%;
+    transition: all 0.5s
+}
+
+.primertexto:hover{
+    transform: scale(1.1);
+}
+.primertexto p{
+    font-size: 20;
+    text-align: center;
+    margin: 0;
+    color: var(--secundario-color);
+    
+}
+
+.primertexto h3{
+    text-align: center;
+    margin: 1px;
+    font-size: 60;
+    font-family: Bebas Neue;
+    color: var(--secundario-color);
+}
+
+
+.imagen{
+    margin:  5rem 10rem;
+    width: 40%;
+
+}
+
+
+.imagen img{
+    margin: 2rem auto;
+    align-content: center;
+    width: 100%;
+    transition: 0.5s;
+}
+.imagen img:hover{
+    transform: scale(1.1);
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    border: .2rem solid rgb(136, 8, 8);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: rgb(136, 8, 8);
+    margin: 1rem 1.5rem 1rem 0;
+    transition: .5s ease;
+    text-decoration: none
+
+}
+
+.social-media a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 1rem rgb(255, 255, 255);
+}
+
+@media (max-width: 1500px){
+
+    .caja{
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 1rem auto;
+        width: 100%;
+    
+    }
+
+    .primertexto{
+        margin: 1rem;
+        width: 50%;
+        height: 40%;
+        transition: all 0.5s;
+        
+    }
+
+    .primertexto p{
+        font-size: 26;
+        text-align: center;
+        margin: 1rem ;
+        color: var(--secundario-color);
+        
+    }
+    
+    .primertexto h3{
+        text-align: center;
+        margin: 1px;
+        font-size: 56;
+        font-family: Bebas Neue;
+        color: var(--secundario-color);
+    }
+
+    .imagen{
+        margin: 2rem;
+        align-items: center;
+        width: 70%;
+        height: 70%;
+    
+    }
+
+    .imagen img{
+        margin: 2rem auto;
+        align-content: center;
+        width: 100%;
+    
+    }
+    
+}
+@media (max-width: 750px){
+
+    .primertexto{
+        margin: 1rem;
+        align-items: center;
+        width: 80%;
+        height: 40%;
+        transition: all 0.5s;
+        
+    }
+
+    .imagen{
+        margin: 2rem;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .imagen img{
+        margin: 2rem auto;
+        align-content: center;
+        width: 100%;
+    
+    }
+
+}
+
+
+/* SERVICIOS*/
+.servicio{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin-top: 100px ;
+    width: 100%;
+    min-height: 100vh;
+
+    
+}
+ .servicio-contenido{
+    width: 100%;
+    margin: 0;
+ }
+.servicio-contenido h1{
+    text-align: center;
+    font-size: 48;
+    margin: 0;
+    font-family: Bebas Neue;
+    background-color:rgb(136, 8, 8);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-top: none;
+}
+.containerservicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+
+.serviciopeluqueria{
+    background: white;
+    text-align: center;
+    border: .2rem solid rgb(139, 5, 5) ;
+    transition: .5s ease ;
+    margin: 5vh;
+    border-radius: 10%;
+    transform: 0.5s;
+}
+
+.serviciopeluqueria:hover{
+    transform: scale(1.1);
+}
+.serviciopeluqueria i{
+    font-size: 5rem;
+    color: rgb(136, 8, 8) ;
+}
+.serviciopeluqueria h2{
+    font-size: 2.6rem;
+    font-family: Bebas Neue;
+    color:rgb(136, 8, 8) ;
+}
+
+.serviciopeluqueria p{
+    font-size: 1.6rem;
+
+}
+@media (max-width: 1300px){
+    .containerservicios{
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 587px){
+
+    .containerservicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .serviciopeluqueria{
+        margin: 5vh;
+        
+    }
+    .serviciopeluqueria i{
+        font-size: 32px;
+        color: rgb(136, 8, 8) ;
+    }
+    .serviciopeluqueria h2{
+        font-size: 32px;
+        font-family: Bebas Neue;
+        color:rgb(136, 8, 8) ;
+    }
+    
+    .serviciopeluqueria p{
+        font-size: 12px;
+    }
+    
+}
+/* Objetivo*/
+
+.objetivo{
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    align-content: center;
+    margin-top: 100px;
+}
+.container-objetivo{
+    background: var(--principal-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.contenedor-textoo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-text{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+}
+ .container-text p{
+    font-size: 20;
+    text-align: center;
+    margin: 0;
+    color: var(--secundario-color);
+ }
+
+ .container-text h1{
+    text-align: center;
+    margin: 1px;
+    font-size: 60;
+    font-family: Bebas Neue;
+    color: var(--secundario-color);
+ }
+
+ .container-text2{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+ .container-text2 p{
+    font-size: 20;
+    text-align: center;
+    margin: 0;
+    color: var(--secundario-color);
+ }
+
+ .container-text2 h1{
+    text-align: center;
+    margin: 1px;
+    font-size: 60;
+    font-family: Bebas Neue;
+    color: var(--secundario-color);
+ }
+
+
+.container-img{
+    width: 100%;
+    height: 700px;
+    background:url(/assets/Imagenes/jeppe-monster-CcjIK1h5jRk-unsplash.jpg) no-repeat center/cover;
+
+}
+
+
+@media (max-width: 690px){
+
+    .container-text h1{
+        font-size: 32;
+    }
+
+    .container-text2 h1{
+        font-size: 32;
+    }
+
+    .container-text2 p{
+        font-size: 18;
+        text-align: center;
+     }
+
+     
+    .container-text p{
+        font-size: 18;
+        text-align: center;
+     }
+
+}
+
+ /*Empleados*/
+
+ .trabajadores{
+    border-bottom: black solid 3px ;
+    border-top: black solid 3px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+ }
+
+ .trabjadores-contenido{
+    width: 100%;
+ }
+
+ .trabjadores-contenido h1{
+    text-align: center;
+    font-size: 48;
+    font-family: Bebas Neue;
+    background-color: var(--principal-color);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-top: none;
+ }
+ .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px 20px;
+    border: var(--terciario-color) solid 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ }
+
+ .card .head{
+    position: relative;
+    height: 125px;
+    width: 100%;
+ }
+
+ .card .head .circulo{
+    background: var(--principal-color);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    bottom: 0;
+    border: var(--terciario-color) solid 2px;
+
+ }
+
+ .card .head .img-card{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: var(--secundario-color);
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%);
+    
+ }
+
+ .card .head .img-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+
+ .card .descripcion{
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+
+    text-align: center;
+
+ }
+
+ .card .descripcion p{
+    margin-top: 20px;
+    font-size: 15px;
+ }
+ 
+ 
+.card .descripcion h3{
+     color: var(--principal-color);
+}
+    
+.card .descripcion h4{
+        color: var(--terciario-color);
+}
+.card .cardcontact{
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+   
+.card .cardcontact a{
+       text-decoration: none;
+       color: var(--secundario-color);
+       background-color:var(--principal-color);
+       border-radius: 5px;
+       border: black solid 2px;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+
+/* Contacto*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .contact-form {
+    width: 40%;
+    box-sizing: border-box;
+
+
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgb(139, 5, 5) ;
+    font-family: Bebas Neue;
+    font-size: 48;
+  }
+  
+
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 10px;
+    background-color: rgb(139, 5, 5);
+    border-radius: 5%;
+    color: white;
+  }
+
+  .contact-form label{
+    font-family: Bebas Neue;
+    font-size: 32;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color:rgb(139, 5, 5); 
+    color: white;
+    padding: 10px;
+    border:  2px solid black;
+    border-radius: 10%;
+    font-family: Bebas Neue;
+    font-size: 32;
+  }
+  
+  .contact-info {
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+    border: 2PX solid black;
+    background-color: rgb(139, 5, 5);
+
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgb(255, 255, 255) ;
+    font-family: Bebas Neue;
+    font-size: 2rem;
+  }
+  
+.contact-info p {
+    margin-left: 1rem;
+    color: white;
+}
+  .contact-info .redes-sociales{
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contact-info .redes-sociales i {
+    margin-top: 10rem;
+    font-size: 50;
+    color: rgb(255, 255, 255);
+    border: 2PX solid rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  .contact-info .redes-sociales i:hover{
+    transform: scale(1.2);
+  }
+  /*FOOTER*/
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color:  rgb(139, 5, 5);
+    color:  rgb(255, 255, 255);
+    padding: 20px 0;
+    border-top: 2px solid black;
+  }
+  
+  .footer-info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-info p{
+    font-size: Bebas Neue;
+    margin: 3px;
+  }
+  .footer-info,
+  .redes-sociales {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .redes-socialesss i{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    margin-left: 10px;
+    font-size: 32;
+  }
+
+
+  /*Paginas de los empleados*/
+  .empleado {
+    width: 100%;
+}
+
+.contenedor-sitios h1 {
+    width: 100%;
+    background-color: var(--principal-color);
+    font-size: 56px; 
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--font--);
+    color: var(--secundario-color);
+}
+
+.contenedor-sitios h2 {
+    text-align: center;
+    width: 100%;
+    color: var(--principal-color);
+    font-size: 40px; 
+    margin-top: 6px;
+    font-family: var(--font--);
+}
+
+.box-empleado {
+    background-color: var(--principal-color);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.contenedor-textos {
+    width: 100%; 
+    max-width: 600px; 
+    box-sizing: border-box; 
+    padding: 10px; 
+}
+
+.contenedor-textos h3{
+    color: var(--secundario-color);
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: var(--font--);
+}
+
+.contenedor-textos p{
+    color: var(--secundario-color);
+    font-size: 16;
+    
+}
+
+.contendor-imagenes {
+    width: 100%;
+    max-width: 600px; 
+    box-sizing: border-box; 
+    margin: 10px;
+}
+
+.contendor-imagenes img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
