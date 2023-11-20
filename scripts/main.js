@@ -32,3 +32,15 @@ ScrollReveal().reveal('inicio-contenido, .imagen ', { origin: 'top' });
 ScrollReveal().reveal('.contenido-banner , .portafolio-box , contacto form', { origin: 'bottom' });
 ScrollReveal().reveal('.datos-contenido h1,  ', { origin: 'left' });
 ScrollReveal().reveal('.datos-contenido p,  ', { origin: 'right' });
+
+
+
+/* Multiples textos*/
+
+const typed = new Typed('.multiples-textos',{
+    strings: ['Cortes de calida','Servicio excelente','Diferenciacion'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    delaySpeed: 1000,
+    loop:true
+});
