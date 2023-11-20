@@ -73,14 +73,14 @@
 .foto1{
     grid-column: 1/2;
     grid-row: 2/3;
-    background: url(./assets/Imagenes/tatuajes/tradicional4.png) no-repeat center/cover;
+    background: url(/assets/Imagenes/tatuajes/tradicional4.png) no-repeat center/cover;
     transition: all 0.5s;
 }
 .foto1:hover{
     transform: scale(1.1);
 }
 .foto2{
-    background: url(./assets/Imagenes/tatuajes/tradicional1.jpg) no-repeat center/cover;
+    background: url(/assets/Imagenes/tatuajes/tradicional1.jpg) no-repeat center/cover;
     grid-column: 3/4;
     grid-row: 1/2;
     transition: all 0.5s;
@@ -90,7 +90,7 @@
 }
 
 .foto3{
-    background: url(./assets/Imagenes/tatuajes/tradicional2.jpg) no-repeat center/cover;
+    background: url(/assets/Imagenes/tatuajes/tradicional2.jpg) no-repeat center/cover;
     grid-column: 1/3;
     grid-row: 1/1;
     transition: all 0.5s;
@@ -100,7 +100,7 @@
 }
 
 .foto4{
-    background: url(./assets/Imagenes/tatuajes/808e90f57c2e43b9b9c62879c6c732b5.jpg) no-repeat center/cover;
+    background: url(/assets/Imagenes/tatuajes/808e90f57c2e43b9b9c62879c6c732b5.jpg) no-repeat center/cover;
     grid-column: 4/4;
     grid-row: 1/4;
     transition: all 0.5s;
@@ -110,7 +110,7 @@
 }
 
 .foto5{
-    background: url(./assets/Imagenes/tatuajes/tradicional3.jpg) no-repeat center/cover;
+    background: url(/assets/Imagenes/tatuajes/tradicional3.jpg) no-repeat center/cover;
     grid-column: 2/3;
     grid-row: 2/4;
     transition: all 0.5s;
@@ -119,7 +119,7 @@
     transform: scale(1.1);
 }
 .foto6{
-    background: url(./assets/Imagenes/tatuajes/dylan-sauerwein-j4n6xTkVjyY-unsplash.jpg) no-repeat center/cover;
+    background: url(/assets/Imagenes/tatuajes/dylan-sauerwein-j4n6xTkVjyY-unsplash.jpg) no-repeat center/cover;
     grid-column: 1/2;
     grid-row: 3/3;
     transition: all 0.5s;
@@ -128,14 +128,14 @@
     transform: scale(1.1);
 }
 .foto7{
-    background: url(./assets/Imagenes/tatuajes/steven-erixon-SBrxqx8Vvhg-unsplash.jpg) no-repeat center/cover;
+    background: url(/assets/Imagenes/tatuajes/steven-erixon-SBrxqx8Vvhg-unsplash.jpg) no-repeat center/cover;
     transition: all 0.5s;
 }
 .foto7:hover{
     transform: scale(1.1);
 }
 .foto8{
-    background: url(./assets/Imagenes/tatuajes/eugene-chystiakov-udEtTnAcSD8-unsplash.jpg)no-repeat center/cover ;
+    background: url(/assets/Imagenes/tatuajes/eugene-chystiakov-udEtTnAcSD8-unsplash.jpg)no-repeat center/cover ;
     transition: all 0.5s;
 }
 .foto8:hover{
