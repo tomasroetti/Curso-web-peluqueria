@@ -29,7 +29,7 @@
 .foto1{
     grid-column: 1/2;
     grid-row: 2/3;
-    background: url(/assets/Imagenes/peluqueria/Peluqueria4.png) no-repeat center/cover;
+    background: url(../Imagenes/peluqueria/Peluqueria1.png) no-repeat center/cover;
     transition: all 0.5s;
 }
 .foto1:hover{
