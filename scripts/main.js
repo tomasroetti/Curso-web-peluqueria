@@ -28,10 +28,10 @@ ScrollReveal({
 
 });
 
-ScrollReveal().reveal('inicio-contenido, .imagen ', { origin: 'top' });
-ScrollReveal().reveal('.contenido-banner , .portafolio-box , contacto form', { origin: 'bottom' });
-ScrollReveal().reveal('.datos-contenido h1,  ', { origin: 'left' });
-ScrollReveal().reveal('.datos-contenido p,  ', { origin: 'right' });
+ScrollReveal().reveal('.inicio-contenido,.imagen,.contendor-imagenes', { origin: 'top' });
+ScrollReveal().reveal('.card', { origin: 'bottom' });
+ScrollReveal().reveal('.contacto ,.container-text2,.container-text', { origin: 'left' });
+
 
 
 
